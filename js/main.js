@@ -21,8 +21,8 @@
 
 const content = ['első', 'második', 'harmadik'];
 
-const generateList = () => {    
-    return '<ul>' + content.map(item => ('<li>' + item + '</li>')).reduce((a, b) => a + b) + '</ul>';
-};
+const generateList = (content =>     
+    '<ul>' + content.map(item => ('<li>' + item + '</li>')).reduce((a, b) => a + b) + '</ul>'
+);
 
-console.log(generateList());
+console.log(generateList(content));
